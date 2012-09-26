@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # All countries, ordered by country code.
 #
 # Definitions are in the format:
@@ -143,10 +144,10 @@ Phony.define do
 
   # Cuba.
   #
-  country '53',
-          match(/^(5\d{3})\d+$/)               >> split(4) | # Mobile
-          match(/^(7|2[123]|4[1-8]|3[1-3])/) >> split(7) | # Short NDCs
-          fixed(3)                             >> split(7)   # 3-digit NDCs
+  # country '53', # Cuba, see special file.
+  #         match(/^(5\d{3})\d+$/)               >> split(4) | # Mobile
+  #         match(/^(7|2[123]|4[1-8]|3[1-3])/) >> split(7) | # Short NDCs
+  #         fixed(3)                             >> split(7)   # 3-digit NDCs
 
   # Argentine Republic.
   #
